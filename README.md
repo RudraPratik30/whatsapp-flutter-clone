@@ -11,7 +11,7 @@ The code for app bar can be seen at WhatsApp_home.dart <br>
 
 ## Chat Screen
 
-<img src="assets/chat_screen.jpg">
+<img src="assets/chat_screen.jpg" height="50%">
 The code for app bar can be seen at chat_screen.dart <br>
 <a href="lib/pages/chat_screen.dart">Click here</a> to view the code.
 
