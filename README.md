@@ -3,6 +3,12 @@
 Creating a WhatsApp Clone using Flutter. <br>
 Flutter Version we are using: Flutter 3.0.5
 
+## App Bar
+
+<img src="assets/app_bar.jpg">
+The code for app bar can be seen at WhatsApp_home.dart
+<a href="lib/WhatsApp_home.dart">Click here</a> to view the code.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
