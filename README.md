@@ -6,8 +6,14 @@ Flutter Version we are using: Flutter 3.0.5
 ## App Bar
 
 <img src="assets/app_bar.jpg">
-The code for app bar can be seen at WhatsApp_home.dart
+The code for app bar can be seen at WhatsApp_home.dart <br>
 <a href="lib/WhatsApp_home.dart">Click here</a> to view the code.
+
+## Chat Screen
+
+<img src="assets/chat_screen.jpg">
+The code for app bar can be seen at chat_screen.dart <br>
+<a href="lib/pages/chat_screen.dart">Click here</a> to view the code.
 
 ## Getting Started
 
