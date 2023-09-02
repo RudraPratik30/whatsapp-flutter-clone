@@ -134,7 +134,7 @@ class statusScreen extends StatelessWidget {
           child: FloatingActionButton(
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10.0))),
-              backgroundColor: Color(0xFFdaf2e3),
+              backgroundColor: const Color(0xFFdaf2e3),
               child: const Icon(
                 Icons.edit,
                 color: Color(0xff075E54),
