@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/models/chat_models.dart';
 
+// ignore: camel_case_types
 class chatScreen extends StatelessWidget {
   const chatScreen({Key? key}) : super(key: key);
 
@@ -26,12 +27,12 @@ class chatScreen extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             dummyData[i].name,
-                            style: TextStyle(fontWeight: FontWeight.bold),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                           Text(
                             dummyData[i].time,
-                            style:
-                                TextStyle(color: Colors.grey, fontSize: 14.0),
+                            style: const TextStyle(
+                                color: Colors.grey, fontSize: 14.0),
                           ),
                         ],
                       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/models/status_models.dart';
 
+// ignore: camel_case_types
 class statusScreen extends StatelessWidget {
   const statusScreen({Key? key}) : super(key: key);
 
@@ -87,41 +88,59 @@ class statusScreen extends StatelessWidget {
                 style: TextStyle(color: Color(0xFF616161), fontSize: 15.0),
               ),
             ),
-            // ListView.builder(
-            //     itemCount: dummyStatusData.length,
-            //     itemBuilder: (context, i) => Column(
-            //           children: <Widget>[
-            //             ListTile(
-            //               leading: CircleAvatar(
-            //                 foregroundColor: Theme.of(context).primaryColor,
-            //                 backgroundColor: Colors.grey,
-            //                 backgroundImage:
-            //                     NetworkImage(dummyStatusData[i].avatarUrl),
-            //               ),
-            //               title: Row(
-            //                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //                 children: <Widget>[
-            //                   Text(
-            //                     dummyStatusData[i].name,
-            //                     style: const TextStyle(
-            //                         fontWeight: FontWeight.bold),
-            //                   ),
-            //                 ],
-            //               ),
-            //               subtitle: Container(
-            //                 padding: const EdgeInsets.only(top: 5.0),
-            //                 child: Text(
-            //                   dummyStatusData[i].time,
-            //                   style: const TextStyle(
-            //                       color: Colors.grey, fontSize: 15.0),
-            //                 ),
-            //               ),
-            //             )
-            //           ],
-            //         )
-            // ),
+            Expanded(
+              flex: 1,
+              child: ListView.builder(
+                itemCount: dummyStatusData.length,
+                itemBuilder: (context, i) => Column(
+                  children: <Widget>[
+                    ListTile(
+                      leading: CircleAvatar(
+                        backgroundImage:
+                            NetworkImage(dummyStatusData[i].avatarUrl),
+                      ),
+                      title: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[Text(dummyStatusData[i].name)],
+                      ),
+                      subtitle: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[Text(dummyStatusData[i].time)],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
-        )
+        ),
+        Positioned(
+          right: 25,
+          bottom: 25,
+          child: FloatingActionButton(
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(15.0))),
+              backgroundColor: const Color(0xff075E54),
+              child: const Icon(
+                Icons.photo_camera,
+              ),
+              onPressed: () {}),
+        ),
+        Positioned(
+          right: 35,
+          bottom: 100,
+          height: 35,
+          width: 35,
+          child: FloatingActionButton(
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10.0))),
+              backgroundColor: Color(0xFFdaf2e3),
+              child: const Icon(
+                Icons.edit,
+                color: Color(0xff075E54),
+              ),
+              onPressed: () {}),
+        ),
       ],
     );
   }
